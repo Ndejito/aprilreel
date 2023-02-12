@@ -5,7 +5,7 @@ pipeline {
        
         stage('Build') {
             steps {
-                sh " clean install package "
+                sh " mvn build install package "
             }
         }
     }
